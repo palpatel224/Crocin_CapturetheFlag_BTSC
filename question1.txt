@@ -1,10 +1,9 @@
 IE_CTF{gii111t_Goo1452Ddd_A4Tt_Gi81Tt}
 
 navigating to the
-
 .git/logs/refs/heads/ 
 
-we can get the faaalg file and in that we will get the commit message for the file9.txt
+we can get the faaaalg file and in that we will get the commit message for the file9.txt
 
 b35017914c3a171c07d827efe56bd318efb80151 aec2839271ea44a727bcf00fd996495f84e2ec79 Atbash <atbash@hebrew.com> 1718167477 +0530	commit: HFEuJ1ITv2wkzGVcNCIuI29eNGJ1NpIpAU9YMUI0C0wkLWUFwS0=
 
