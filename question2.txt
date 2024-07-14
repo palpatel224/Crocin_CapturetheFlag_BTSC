@@ -1,6 +1,9 @@
+FLAG : 
 IE_CTF{aDFlbGwwX0FxMTJxdWlSUmVEX1N1MTFjZThz}
 
 
+
+EXPLANATION : 
 converted jpg to zip 
 unzipped the photo in order to get the dummy folder etc
 using ls -a dummy fetched a hidden folder .hacker
