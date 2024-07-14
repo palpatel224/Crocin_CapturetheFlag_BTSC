@@ -1,7 +1,9 @@
+FLAG: 
 IE{!_am_hEre_buDdi_2024}
 
 
-since it was an executable file
+EXPLANATION : 
+since downloaded file was an executable file
 i decompiled using ghidra
 after that in the main function
 
