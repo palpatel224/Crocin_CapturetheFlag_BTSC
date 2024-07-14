@@ -1,0 +1,67 @@
+IE{!_am_hEre_buDdi_2024}
+
+
+since it was an executable file
+i decompiled using ghidra
+after that in the main function
+
+
+undefined8 main(void)
+
+{
+  char local_58 [76];
+  int local_c;
+  
+  local_c = 0;
+  printf("Enter your input: ");
+  gets(local_58);
+  if (local_c == 0) {
+    puts("Try again?");
+  }
+  else {
+    secretFunction();
+  }
+  return 0;
+}
+
+
+in any case the output would be try again since we cant change local_c
+
+later in the secret function
+there were three long long int (in hexadecimal form)
+and then later there was a for loop which added 1 to 24 to them and then used xor operator with 204
+
+  local_28 = 0x93a1ad93edb78985;
+  local_20 = 0x88b9ae93a9be89a4;
+  local_18 = 0xb1f8fefcfe93a5a8;
+  for (local_c = 0; local_c < 0x18; local_c = local_c + 1) {
+    putchar((uint)(*(byte *)((long)&local_28 + (long)local_c) ^ 0xcc));
+  }
+  
+ 
+ I wrote a c++ program in order to do the same for each of the 3 numbers which initially caused problems due to large integer
+ 
+ 
+ #include <iostream>
+using namespace std;
+
+int main() {
+    unsigned long long a = 10637974645685848453ULL; 
+
+    for(int i = 0; i < 24; i++) {
+        char c = (char)((a >> (i * 8)) & 0xFF) ^ 204; 
+        cout << c;
+    }
+
+    return 0;
+}
+ 
+ 
+ after fixing it and the output for local_28 revealed that the characters were 
+ 
+//IE{!_am_IE{!_am_IE{!_am_   10637974645685848453ULL;  0x93a1ad93edb78985
+//hEre_buDhEre_buDhEre_buD   9852097609080932772ULL;   0x88b9ae93a9be89a4
+//di_2024}di_2024}di_2024}   12824280301493790120ULL   0xb1f8fefcfe93a5a8
+
+
+and later joining each of the repeated part flag is obtained
