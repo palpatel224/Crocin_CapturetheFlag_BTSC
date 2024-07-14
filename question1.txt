@@ -1,5 +1,9 @@
+FLAG : 
 IE_CTF{gii111t_Goo1452Ddd_A4Tt_Gi81Tt}
 
+
+
+EXPLANATION : 
 navigating to the
 .git/logs/refs/heads/ 
 
