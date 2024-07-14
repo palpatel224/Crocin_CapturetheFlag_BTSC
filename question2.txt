@@ -3,12 +3,12 @@ IE_CTF{aDFlbGwwX0FxMTJxdWlSUmVEX1N1MTFjZThz}
 
 converted jpg to zip 
 unzipped the photo in order to get the dummy folder etc
-using ls -a dummy fetched a hidden folder
-which contained a file which required an input for the correct flag
+using ls -a dummy fetched a hidden folder .hacker
+which contained the file question_for_ctf which required an input for the correct flag
 
-then upon decompiling using ghidra showed printff function in which the string was present as hex 
+then upon decompiling using ghidra showed printff function in which there were many variables with hex values
 since the question mentioned about text to binary thing, i converted the 36 hex values into their respective ascii values and then further the characters
 and then using these 36 characters as the input for the question_for_ctf file 
-it revelead that it was the correct submitted data 
+it revelead that it was the correct submitted data and that data was the flag 
 
 
